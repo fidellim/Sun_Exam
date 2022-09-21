@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: rgb(226, 197, 135);
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background-color: rgba(212, 212, 212, .8);
+
+    div {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px 15px;
+        border-radius: 7px;
+
+        >button {
+            background: transparent;
+            align-self: flex-end;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.articlesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 10px;
+}
+
+.articleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid rgb(149, 169, 235);
+    border-radius: 7px;
+    background-color: azure;
+    text-align: left;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+        transform: translate(0px, 5px);
+        animation: all .5s ease-in-out;
+    }
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 10px;
+    gap: 10px;
+
+    input[type="text"] {
+        border: 2px solid rgb(149, 169, 235);
+        border-radius: 7px;
+        padding: 10px 5px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 1rem;
+    align-self: flex-end;
+
+    button {
+        padding: .25rem .5rem;
+        background-color: rgb(149, 169, 235);
+        color: white;
+        border-radius: 7px;
+
+    }
+}
+
+.buttonNewArticle {
+    padding: .25rem .5rem;
+    background-color: rgb(149, 169, 235);
+    color: white;
+    border-radius: 7px;
+}
+
+.buttonEditPostArticle {
+    padding: .25rem .5rem;
+    background-color: rgb(149, 169, 235);
+    color: white;
+    border-radius: 7px;
+}
